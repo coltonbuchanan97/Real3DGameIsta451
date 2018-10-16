@@ -13,7 +13,7 @@ public class shotGun : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (projectiles.Count > maxProjectiles) return;
 
