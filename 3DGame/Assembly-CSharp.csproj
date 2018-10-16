@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\MovePlayer.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Colton/Documents/GitHub/Real3DGameIsta451/3DGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
