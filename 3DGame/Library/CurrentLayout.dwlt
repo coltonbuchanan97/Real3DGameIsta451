@@ -108,10 +108,10 @@ MonoBehaviour:
     y: 30
     width: 1067
     height: 546
-  m_MinSize: {x: 909, y: 442}
-  m_MaxSize: {x: 22004, y: 10000}
+  m_MinSize: {x: 911, y: 442}
+  m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 826
+  controlID: 1056
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 827
+  controlID: 1057
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,14 +368,14 @@ MonoBehaviour:
     height: 303
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 119.8979626990155
+  lastFramingTime: 775.9565934492567
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 1, z: -10}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 1, z: -10}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -403,13 +403,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 22
+    m_Target: 233.34525
     speed: 2
-    m_Value: 22
+    m_Value: 233.34525
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -490,8 +490,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 10e1ffff
-    m_LastClickedID: -7920
+    m_SelectedIDs: 
+    m_LastClickedID: 0
     m_ExpandedIDs: e6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -553,19 +553,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Colton\Documents\GitHub\Real3DGameIsta451\3DGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 080a0000
-    m_LastClickedID: 2568
+    m_SelectedIDs: 4e090000
+    m_LastClickedID: 2382
     m_ExpandedIDs: 000000004e090000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 600a00004e0b000062080000
+    m_ExpandedInstanceIDs: 600a00004e0b00006208000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
