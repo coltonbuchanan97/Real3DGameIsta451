@@ -64,7 +64,9 @@
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\Scripts\BulletCon.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\MovePlayer.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\shotGun.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Colton/Documents/GitHub/Real3DGameIsta451/3DGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

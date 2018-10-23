@@ -20,4 +20,17 @@ public class BulletCon : MonoBehaviour {
             owner.ProjectileDestroyed(this);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(this.gameObject);
+        }
+
+        if (collision.gameObject.tag == "Wall")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

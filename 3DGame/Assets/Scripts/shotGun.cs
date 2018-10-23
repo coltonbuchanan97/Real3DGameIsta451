@@ -5,9 +5,9 @@ using UnityEngine;
 public class shotGun : MonoBehaviour {
 
     public BulletCon projectile;
-    public float projectileSpawnDistance;
+    private float projectileSpawnDistance = 0;
 
-    public int maxProjectiles;
+    private int maxProjectiles = 30;
 
     public List<BulletCon> projectiles = new List<BulletCon>();
 
@@ -18,7 +18,7 @@ public class shotGun : MonoBehaviour {
             if (projectiles.Count > maxProjectiles) return;
 
             BulletCon newProjectile = Instantiate<BulletCon>(projectile);
-            newProjectile.transform.position = transform.position + transform.right * projectileSpawnDistance;
+            newProjectile.transform.position = transform.position + transform.forward * projectileSpawnDistance;
             projectiles.Add(newProjectile);
             newProjectile.owner = this;
         }
