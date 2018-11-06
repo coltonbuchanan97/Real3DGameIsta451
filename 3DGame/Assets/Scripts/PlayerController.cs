@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
+[System.Serializable]
 public class Boundary
 {
     public float xMin, xMax, zMin, zMax;
@@ -11,29 +11,19 @@ public class PlayerController : MonoBehaviour
 {
 
     public float speed;
-    public float tilt;
     private float nextFire;
     public float fireRate;
     public Boundary boundary;
     public GameObject shot;
     public Transform shotSpawn1;
-    public Transform shotSpawn2;
 
+    public bool death;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightShift) && Time.time > nextFire)
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
-            //GameObject clone = 
-            Instantiate(shot, shotSpawn1.position, shotSpawn1.rotation); //as GameObject;
-            GetComponent<AudioSource>().Play();
-        }
-        if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            //GameObject clone = 
-            Instantiate(shot, shotSpawn2.position, shotSpawn2.rotation); //as GameObject;
-            GetComponent<AudioSource>().Play();
+            Instantiate(shot, shotSpawn1.position, shotSpawn1.rotation);
         }
     }
 
@@ -51,7 +41,7 @@ public class PlayerController : MonoBehaviour
             0.0f,
             Mathf.Clamp(GetComponent<Rigidbody>().position.z, boundary.zMin, boundary.zMax));
 
-        GetComponent<Rigidbody>().rotation = Quaternion.Euler(0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
+        GetComponent<Rigidbody>().rotation = Quaternion.Euler(0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -0);
 
     }
 
